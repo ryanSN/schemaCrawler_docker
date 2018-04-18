@@ -10,9 +10,8 @@ docker run -v $(pwd):/output --rm -i -t \
 --network=nameOfYourNetworkIfYouHave \
 --link mydbname_db_1:db chatters/schemacrawler_docker:14.20.04 \
 -server=postgresql \
--network=earnest_no_staging_conflict \
 -host=db \
--user=earnest \
+-user=youDbUserName \
 -password= \
 -schema=public \
 -database=mydbname \
@@ -29,5 +28,5 @@ brew install graphviz
 ```
 
 ```bash
-dot -Tpng earnest_db.png.dot -o earnest_db.png
+dot -Tpng youDbUserName.png.dot -o youDbUserName.png
 ```
