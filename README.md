@@ -8,7 +8,7 @@ Assume your postgres db is already in an existing container
 ```bash
 docker run -v $(pwd):/output --rm -i -t \
 --network=nameOfYourNetworkIfYouHave \
---link earnest_db_1:db chatters/schemacrawler_docker:14.20.04 \
+--link mydbname_db_1:db chatters/schemacrawler_docker:14.20.04 \
 -server=postgresql \
 -network=earnest_no_staging_conflict \
 -host=db \
