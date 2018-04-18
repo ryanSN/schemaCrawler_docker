@@ -1,0 +1,6 @@
+.DS_STORE
+
+.npmrc
+*.png
+*.dot
+.notes/
